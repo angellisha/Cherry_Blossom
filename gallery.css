@@ -1,0 +1,288 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white; /* Change to white when done */
+}
+
+.mainbox {
+  width: 1000px;
+  height: 2960px; /* will be adjusted once page is complete */
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  text-align: left;
+}
+
+/* Header section*/
+header {
+  float: left;
+  width: 420px;
+  height: 140px;
+  background-color: white;
+  padding: 10px;
+
+  border-bottom: 2px solid #ddb79c;
+}
+header h1 {
+  color: #8c9e78;
+  padding-top: 40px;
+  font-family: Luminari;
+}
+header p {
+  color: #d7a49a;
+  padding-left: 28px;
+  font-size: 10pt;
+  font-family: Luminari;
+}
+
+/* Navigation in header section*/
+nav {
+  float: left;
+  width: 580px;
+  height: 140px;
+  background-color: white;
+
+  text-align: right;
+  padding: 60px 20px 0px 0px;
+
+  border-bottom: 2px solid #ddb79c;
+}
+
+nav a:link {
+  color: #d7a49a;
+  text-decoration: none;
+
+  font-size: 22pt;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}
+nav a:visited {
+  color: #d7a49a;
+  text-decoration: none;
+
+  font-size: 22pt;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}
+nav a:hover {
+  background-color: #d7a49a;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+
+  font-size: 22pt;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}
+
+/* Main content section */
+
+main h1 {
+  color: #8c9e78;
+  padding-top: 100px;
+  font-family: Luminari;
+  font-size: 30pt;
+}
+p {
+  color: #d7a49a;
+  text-decoration: none;
+  font-size: 22pt;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding: 40px 5%;
+}
+
+.heading-text {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.heading-text span {
+  font-weight: 100;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Responsive image gallery rules begin*/
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-gallery > li {
+  flex-basis: 350px; /*width: 350px;*/
+  position: relative;
+  cursor: pointer;
+}
+
+.image-gallery::after {
+  content: "";
+  flex-basis: 350px;
+}
+
+.image-gallery li img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: (57, 57, 57, 0.502);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  border-radius: 5px;
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover */
+.image-gallery li:hover {
+  opacity: 0.8;
+}
+.image-gallery li:hover .overlay {
+  transform: scale(1);
+}
+span {
+  color: #697b55;
+  font-family: Luminari;
+  font-size: 20pt;
+}
+Blockquote {
+  color: #d7a49a;
+  font-family: Luminari;
+  font-size: 16pt;
+  text-align: right;
+  padding-bottom: 45px;
+  padding-right: 45px;
+}
+
+/* Footer section with links and text, also used copyrite text */
+/*gap: 10px; footer social media icons*/
+.social_media_icons {
+  float: left;
+  width: 200px;
+  height: 150px;
+  background-color: #ddb79c;
+}
+.social_media_icons a:link {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+
+  margin: 4px;
+  margin-left: 20px;
+}
+.social_media_icons a:visited {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.social_media_icons a:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  border: 1px solid white;
+  background: #ddb79c;
+  color: white;
+}
+.fa-instagram {
+  border: 1px solid white;
+  background: #ddb79c;
+  color: white;
+}
+.fa-pinterest {
+  border: 1px solid white;
+  background: #ddb79c;
+  color: white;
+}
+
+/* Middle part of footer with text */
+.midle_text {
+  float: left;
+  width: 600px;
+  height: 150px;
+  background-color: #ddb79c;
+
+  padding-top: 20px;
+}
+.midle_text h1 {
+  color: #788c62;
+  font-family: Luminari;
+}
+.midle_text p {
+  color: white;
+  font-size: 8pt;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}
+#footer_slogan {
+  font-size: 10pt;
+  font-family: Luminari;
+}
+
+/* Right part with some links */
+.privacy_contact_links {
+  float: left;
+  width: 200px;
+  height: 150px;
+  background-color: #ddb79c;
+
+  text-align: right;
+  padding-top: 40px;
+  padding-right: 10px;
+}
+#top_link {
+  font-size: 14pt;
+}
+.privacy_contact_links a:link {
+  color: white;
+  text-decoration: none;
+
+  font-size: 10pt;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}
+.privacy_contact_links a:visited {
+  color: white;
+  text-decoration: none;
+
+  font-size: 10pt;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}
+.privacy_contact_links a:hover {
+  background-color: white;
+  color: #ddb79c;
+  text-decoration: none;
+
+  font-size: 10pt;
+  padding: 5px;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}

@@ -1,0 +1,254 @@
+/* The whole page I make white. Just some section background or 
+blocks we can make nude - #ddb79c colour. I deleted the padding, 
+if needed can add inside each section, but because the whole page is 
+white it will not look crowded. I noticed that sections are desepiaring
+if you are not floating them, if section does not need to be floated 
+just float it to the left. */
+
+/* Color sage - #8c9e78 I used for title and also we can use it for 
+main titles. Color dusty rose - #d7a49a I used for slogan and links,
+also we can use it to hilight something.*/
+
+/* In footer I used a little bit darker colour of green so it will be
+more visible */
+
+/* Fonts that was used are Luminari; - fantasy font for title and slogan,
+I think that we also can use it for headings. For everything else 
+I used Baskerville, "Times New Roman", Times, serif; - I think it 
+looks good and we can make the whole page in it. If you find any 
+interesting fonts please share with us so we will use it on all pages. */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white; /* Change to white when done */
+}
+
+.mainbox {
+  width: 1000px;
+  height: 1860px; /* will be adjusted once page is complete */
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  text-align: left;
+}
+
+/* Header section*/
+header {
+  float: left;
+  width: 1000px;
+  height: 600px;
+  background-color: white;
+  padding-top: 60px;
+
+  border: 2px solid #ddb79c;
+}
+header h1 {
+  color: #8c9e78;
+  font-size: 34pt;
+  font-family: Luminari;
+  padding-left: 10px;
+}
+header p {
+  color: #d7a49a;
+  padding-left: 28px;
+  font-size: 16pt;
+  font-family: Luminari;
+}
+.header_img {
+  margin: 40px 0px 40px 0px;
+}
+/* Navigation in header section*/
+
+nav a:link {
+  color: #d7a49a;
+  text-decoration: none;
+
+  font-size: 24pt;
+  font-weight: 700;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}
+nav a:visited {
+  color: #d7a49a;
+  text-decoration: none;
+
+  font-size: 24pt;
+  font-weight: 700;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}
+nav a:hover {
+  background-color: #d7a49a;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+
+  font-size: 24pt;
+  font-weight: 700;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}
+
+/* Main content section */
+.biography_section {
+  float: left;
+  width: 1000px;
+  height: 410px;
+  background-color: #ddb79c;
+  padding: 10px;
+}
+.biography_section img {
+  margin: 0px 10px 10px 0px;
+}
+.biography_section p {
+  font-size: 14pt;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}
+.biography_section h1 {
+  color: #788c62;
+  font-family: Luminari;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 20pt;
+}
+
+.new_collection {
+  float: left;
+  width: 1000px;
+  height: 700px;
+  background-color: white;
+  padding: 10px 50px 10px 50px;
+}
+.new_collection h1 {
+  color: #8c9e78;
+  font-family: Luminari;
+  padding-top: 5px;
+  font-size: 20pt;
+}
+.new_collection p {
+  color: #d7a49a;
+  font-size: 16pt;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+  padding-bottom: 30px;
+}
+
+.doll_block {
+  float: left;
+  width: 180px;
+  height: 280px;
+  background-color: brown;
+}
+.white_block {
+  float: left;
+  width: 180px;
+  height: 280px;
+  background-color: white;
+}
+
+/* Footer section with links and text, also used copyrite text */
+/* footer social media icons */
+.social_media_icons {
+  float: left;
+  width: 200px;
+  height: 150px;
+  background-color: #ddb79c;
+}
+.social_media_icons a:link {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+
+  margin: 4px;
+  margin-left: 20px;
+}
+.social_media_icons a:visited {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.social_media_icons a:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  border: 1px solid white;
+  background: #ddb79c;
+  color: white;
+}
+.fa-instagram {
+  border: 1px solid white;
+  background: #ddb79c;
+  color: white;
+}
+.fa-pinterest {
+  border: 1px solid white;
+  background: #ddb79c;
+  color: white;
+}
+
+/* Middle part of footer with text */
+.midle_text {
+  float: left;
+  width: 600px;
+  height: 150px;
+  background-color: #ddb79c;
+
+  padding-top: 20px;
+}
+.midle_text h1 {
+  color: #788c62;
+  font-family: Luminari;
+}
+.midle_text p {
+  color: white;
+  font-size: 8pt;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}
+#footer_slogan {
+  font-size: 10pt;
+  font-family: Luminari;
+}
+
+/* Right part with some links */
+.privacy_contact_links {
+  float: left;
+  width: 200px;
+  height: 150px;
+  background-color: #ddb79c;
+
+  text-align: right;
+  padding-top: 40px;
+  padding-right: 10px;
+}
+#top_link {
+  font-size: 14pt;
+}
+.privacy_contact_links a:link {
+  color: white;
+  text-decoration: none;
+
+  font-size: 10pt;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}
+.privacy_contact_links a:visited {
+  color: white;
+  text-decoration: none;
+
+  font-size: 10pt;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}
+.privacy_contact_links a:hover {
+  background-color: white;
+  color: #ddb79c;
+  text-decoration: none;
+
+  font-size: 10pt;
+  padding: 5px;
+  font-family: Baskerville, "Times New Roman", Times, serif;
+}
